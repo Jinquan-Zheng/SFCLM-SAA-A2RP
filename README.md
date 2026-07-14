@@ -1,13 +1,13 @@
 ﻿# SFCLM: Stochastic Flow-Capturing Location Model (Gurobi + A2RP)
 
-This repository provides open-source code for solving a **two-stage stochastic flow-capturing location model (SFCLM)** for strategic transfer-location planning in multi-hop ride-pooling systems. The SAA problem is solved with **Gurobi**. Solution quality is assessed by the **average two-replication procedure (A2RP)**, which supports **adaptive SAA sample-size assessment** via the relative optimality gap (ROG).
+This repository provides open-source code for solving a **two-stage stochastic flow-capturing location model (SFCLM)** for strategic transfer location planning in multi-hop ride-pooling systems. The SAA problem is solved with **Gurobi**. Solution quality is assessed by the **average two-replication procedure (A2RP)**, which supports **adaptive SAA sample size assessment** via the relative optimality gap (ROG).
 
 > Accompanying paper: *A flow-capturing location model for multi-hop ride-pooling systems with stochastic demand* (submitted to *Transportmetrica A: Transport Science*).
 
 ## What is included
 
 - Two-stage SFCLM formulation solved by Gurobi
-- A2RP evaluation and ROG-based sample-size adequacy check
+- A2RP evaluation and ROG-based sample size adequacy check
 - Bundled a subset of **sample scenarios** and **2019 Shenzhen metro candidate stations** for a runnable demo
 
 ## Requirements
