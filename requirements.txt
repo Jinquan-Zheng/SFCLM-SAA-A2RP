@@ -1,0 +1,13 @@
+﻿# Core scientific stack (tested with Python 3.11+)
+pandas>=1.5.0
+numpy>=1.23.0,<2.0
+scipy>=1.9.0
+tqdm>=4.64.0
+
+# Gurobi Python API (requires a valid Gurobi license installed separately)
+gurobipy>=11.0.0
+
+# Jupyter environment (required to run the notebook)
+jupyter>=1.0.0
+notebook>=6.5.0
+ipykernel>=6.0.0
