@@ -1,8 +1,25 @@
-﻿# SFCLM: Stochastic Flow-Capturing Location Model
+# SFCLM: Stochastic Flow-Capturing Location Model
 
 This repository provides open-source code for solving a **two-stage stochastic flow-capturing location model (SFCLM)** for strategic transfer location planning in multi-hop ride-pooling systems. The SAA problem is solved with **Gurobi**. Solution quality is assessed by the **average two-replication procedure (A2RP)**, which supports **adaptive SAA sample size assessment** via the relative optimality gap (ROG).
 
-> Accompanying paper: *A flow-capturing location model for multi-hop ride-pooling systems with stochastic demand* (submitted to *Transportmetrica A: Transport Science*).
+> Accompanying paper:  A flow-capturing location model for multi-hop ride-pooling systems with stochastic demand. *Transportmetrica A: Transport Science*, 1–35. https://doi.org/10.1080/23249935.2026.2753573
+
+## Citation
+
+If you use this code, please cite:
+
+Zheng, J., Li, B., Szeto, W. Y., Lei, T., Gong, L., & Luo, Q. (2026). A flow-capturing location model for multi-hop ride-pooling systems with stochastic demand. *Transportmetrica A: Transport Science*, 1–35. https://doi.org/10.1080/23249935.2026.2753573
+
+```bibtex
+@article{zheng2026sfclm,
+  author  = {Zheng, J. and Li, B. and Szeto, W. Y. and Lei, T. and Gong, L. and Luo, Q.},
+  title   = {A flow-capturing location model for multi-hop ride-pooling systems with stochastic demand},
+  journal = {Transportmetrica A: Transport Science},
+  year    = {2026},
+  pages   = {1--35},
+  doi     = {10.1080/23249935.2026.2753573}
+}
+```
 
 ## What is included
 
@@ -46,9 +63,9 @@ python run_demo.py
 
 To reproduce the paper's sample-size assessment:
 
-1. Prepare SAA scenario folders for increasing sample sizes `M`, each containing scenario CSV files with the schema in `data/README_data.md`.
-2. Point Cell 2 to those folders and set `DEMO_MODE = False` (then `p = 1..191`).
-3. For each sample size `M`, solve the SFCLM and compute ROG by A2RP; increase `M` until ROG is below `xi` for all `p` values.
+1. Prepare SAA scenario folders for increasing sample sizes `M`, each containing scenario CSV files with the schema in `data/README_data.md`.
+2. Point Cell 2 to those folders and set `DEMO_MODE = False` (then `p = 1..191`).
+3. For each sample size `M`, solve the SFCLM and compute ROG by A2RP; increase `M` until ROG is below `xi` for all `p` values.
 
 Full scenario data are available from the corresponding author upon reasonable request.
 
@@ -67,9 +84,6 @@ sfclm-saa/
 └── LICENSE
 ```
 
-## Citation
-
-If you use this code, please cite the accompanying paper <u>(DOI to be added upon publication</u>).
 
 ## License
 
